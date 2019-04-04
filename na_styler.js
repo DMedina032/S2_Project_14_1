@@ -24,12 +24,17 @@ window.addEventListener("load", setStyles);
 
 var styleNum = randlnt(5);
 var linkElem = document.getElementById("link");
-link.setAttribute("rel", "styleSheet");
-link.setAttribute("id", "fancySheet");
-link.setAttribute("href", "na_style_num.css");
+linkElem.setAttribute("rel", "styleSheet");
+linkElem.setAttribute("id", "fancySheet");
+linkElem.setAttribute("href", "na_style_num.css");
 
-document.createElement(figBox);
-figBox
+document.head.appendChild(linkElem);
+
+var figBox = document.createElement("figure");
+figBox.setAttribute("id", "styleThumbs");
+
+document.getElementById("box", figBox);
+
 
 
 
